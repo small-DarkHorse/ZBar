@@ -10,6 +10,13 @@ using a video device (eg, webcam) as a bar code scanner.  For application
 developers, language bindings are included for C, C++, Python and Perl
 as well as GUI widgets for Qt, GTK and PyGTK.
 
+译文：
+ZBar Bar Code Reader是一款开源的Bar阅读软件套件
+来自各种来源的代码，如视频流、图像文件和原始文件强度传感器。
+它支持EAN-13/UPC-A, UPC-E, EAN-8, Code 128，代码39,Codabar，交错2的5和QR码。
+其中包含的库是解码捕获的条形码图像和使用视频设备(如网络摄像头)作为条形码扫描仪。
+对于应用程序开发人员，语言绑定包括C, c++， Python和Perl以及用于Qt、GTK和PyGTK的GUI小部件。
+
 Check the ZBar home page for the latest release, mailing lists, etc.
     http://zbar.sourceforge.net/
 
@@ -72,6 +79,46 @@ the corresponding component using configure (see configure --help).
 The Perl bindings must be built separately after installing the
 library.  see
     perl/README
+
+译文：
+请参阅“INSTALL”以获得通用的配置和构建说明。
+扫描器/解码器库本身只需要几个标准库函数应该几乎在任何地方都可用。
+zbarcam程序使用video4linux API (v4l1或v4l2)进行访问视频设备。这个接口是linux 2.6内核的一部分
+推荐内核以获得全面支持。可获得更多信息在http://www.linuxtv.org/wiki/Pkg-config用于定位已安装的库。你应该
+已安装pkg-config(如果需要其他任何组件)。
+Pkg-config可以从http://pkg-config.freedesktop.org/zbarimg程序使用ImageMagick读取图像文件在许多
+
+不同的格式。您至少需要ImageMagick版本6.2.6
+
+如果要扫描图像文件。ImageMagick可以从http://www.imagemagick.org/
+
+Qt小部件需要Qt4。如果您愿意，您将需要Qt4使用或开发一个带有集成条形码的Qt GUI应用程序扫描部件。Qt4可以从http://qt.nokia.com/products
+
+GTK+小部件需要GTK+-2.x。如果需要的话，您将需要GTK+喜欢使用或开发带有集成工具条的GTK+ GUI应用程序
+
+代码扫描部件。GTK+可以从
+
+http://www.gtk.org/ GTK+小部件的PyGTK包装器需要Python和PyGTK。你
+
+如果您想使用或开发PyGTK GUI，将需要两者
+
+应用程序与集成的条形码扫描小部件。PyGTK可能获得http://www.pygtk.org/
+
+Python绑定需要Python(版本?)。你将需要Python，如果你想直接使用Python扫描图像或视频。
+
+Python可从http://python.org/Perl绑定需要Perl(版本?)。您将需要Perl
+
+希望直接使用Perl扫描图像或视频。Perl是可以从http://www.perl.org/
+
+如果所需的库不可用，可以禁用用于的构建相应的组件使用configure(参见configure——help)。
+
+Perl绑定必须在安装
+
+图书馆。看到
+
+perl /自述
+
+
 
 
 RUNNING
